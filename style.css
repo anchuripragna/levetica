@@ -1,0 +1,458 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* section1--------------------------------------------------------------------------------- */
+.main {
+    background-color: rgb(83, 83, 117);
+    color: white;
+    height: 50px;
+}
+
+.main h6 {
+    margin-left: 160px;
+    margin-top: 12px;
+}
+
+.main p {
+    margin-top: 12px;
+    margin-left: 460px;
+}
+
+.main span:hover {
+    color: gold;
+}
+
+.main i:hover {
+    color: gold;
+}
+
+/* section2------------------------------------------------------------------------- */
+.main2 a {
+    margin-left: 20px;
+}
+
+.main2 ul {
+    margin-left: 180px;
+}
+
+button {
+    padding: 0.8em 1.8em;
+    border: 2px solid rgb(83, 83, 117);
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: black;
+    border-radius: 30px;
+    margin-right: 50px;
+    text-decoration: underline;
+}
+
+button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: rgb(83, 83, 117);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+button:hover::before {
+    width: 105%;
+}
+
+button:hover {
+    color: white;
+}
+
+/* section3----------------------------------------------------------------- */
+
+.main3 {
+    background:url("images/home-one/home-one-img3.jpg") ;
+    height: 650px;
+    width: 100%;
+    background-size: 100% 100%;
+    background-position: fixed;
+}
+.main3 button
+{
+    margin-top: 100px;
+    /* color: white; */
+}
+.main3 h1
+{
+    font-size: 60px;
+    margin-top: 50px;
+    /* color: white; */
+
+} 
+.main3 p
+{
+    margin-top: 50px;
+    /* color: white; */
+}
+.button2 {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: rgb(83, 83, 117);
+    border: 1px solid #e8e8e8;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  }
+  
+  .button2:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  }
+  
+  .button2:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button2:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color:rgb(240, 76, 76);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  .button2:hover {
+    color: #ffffff;
+    border: 1px solid rgb(240, 76, 76);
+  }
+  
+  .button2:hover:before {
+    top: -35%;
+    background-color:rgb(240, 76, 76);
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  
+  .button2:hover:after {
+    top: -45%;
+    background-color: rgb(240, 76, 76);
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  /* section4--------------------------------------------------------------------- */
+.int i
+{
+  font-size: 50px;
+  color: white;
+}
+.int i,h3,h6
+{
+  margin-left: 40px;
+}
+.int h4,h1,p
+{
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.int img
+{
+  height:480px;
+  width: 500px;
+  border-radius: 30px;
+  margin-left: 30px;
+  margin-top: 80px;
+}
+.int
+{
+  background-color:rgb(83, 83, 117);
+  color: white;
+  height: 650px;
+}
+
+/* section5----------------------------------------------------------------- */
+.double 
+{
+  text-align: center;
+  /* margin-top: 40px; */
+  height: 650px;
+}
+.double h6
+{
+  color:lightcoral;
+  margin-top: 40px;
+}
+.double h1
+{
+  color: black;
+}
+.card {
+  position: relative;
+  width: 220px;
+  height: 320px;
+  background:white ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  color:black;
+  float: left;
+  margin-left: 70px;
+  margin-top: 40px;
+}
+
+.card::before,
+.card::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: rgb(83, 83, 117);
+  transition: all 0.5s;
+}
+
+.card::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.card:hover::before,
+.card:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.card:hover:after {
+  content: "Our expertise in crafting responsive and dynamic websites ensures an impactful presence for your business.";
+  color: white;
+}
+
+/* section6------------------------------------------------------------------------- */
+.dot
+{
+  height: 570px;
+  background-color: rgb(208, 213, 213);
+}
+.dot img
+{
+  height: 470px;
+  width: 550px;
+  margin-top: 30px;
+  border-radius: 30px;
+  margin-left: 20px;
+  position: absolute;
+}
+.dot h3,h1
+{
+  position: relative;
+  z-index: ;
+  margin-top: 80px;
+  color: white;
+}
+.dot i{
+  margin-top: 20px;
+  font-size: 30px;
+}
+.dot{
+  color: white;
+}
+/* section7------------------------------------------------------------------------------------------- */
+.aa i
+{
+  font-size: 50px;
+  color: white;
+}
+.aa i,h3,h6
+{
+  margin-left: 40px;
+}
+.aa h4,h1,p
+{
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.aa img
+{
+  height:480px;
+  width: 530px;
+  border-radius: 30px;
+  margin-left: 30px;
+  margin-top: 80px;
+}
+.aa
+{
+  background-color:rgb(83, 83, 117);
+  color: white;
+  height: 650px;
+}
+/* section8------------------------------------------------------------------- */
+.bb h1
+{
+  color: black;
+  
+
+}
+.bb h4
+{
+  margin-top: 30px;
+  color: rgb(83, 83, 117);
+}
+.bb
+{
+  text-align: center;
+  height: 490px;
+}
+.cc
+{
+  margin-top: 40px;
+  margin-right: 10px;
+} 
+/* section9---------------------------------------------------------------- */
+.dd{
+  background-image: url(images/home-one/img2.jpg);
+height: 500px;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+margin-top: 75px;
+/* opacity: 0.6; */
+}
+.dd h6
+{
+  margin-top: 50px;
+  color: rgb(236, 244, 14);
+  font-size: 30px;
+}
+.ee h3{
+  font-size: 50px;
+  color: rgb(2, 4, 5);
+  padding-top: 20px;
+}
+.dd h2
+{
+  color: #f6f5f8;
+}
+
+.ee{
+  display: flex;
+  margin-left: 120px;
+  /* border: 2px solid green; */
+  margin-top: 70px;
+  margin-left: 20px;
+}
+.vv{
+  height: 130px;
+  width: 130px;
+  border:2px solid rgb(170, 216, 53);
+  margin-left: 40px;
+}
+.vv i
+{
+  margin-right:200px;
+}
+.vv1{
+  height: 130px;
+  width: 130px;
+  border:2px solid rgb(170, 216, 53);
+  margin-left: 30px;
+}
+.vv2{
+  height: 130px;
+  width: 130px;
+  border:2px solid rgb(170, 216, 53);
+  margin-left: 30px;
+}
+.vv3{
+  height: 130px;
+  width: 130px;
+  border:2px solid rgb(170, 216, 53);
+  margin-left:30px;
+}
+/* section10---------------------------------------------------------------- */
+.we{
+  margin-top: 540px;
+  background-color: rgb(83, 83, 117);
+  color: white;
+  height: 600px;
+}
+.rajesh{
+  margin-top: 50px;
+  height: 110px;
+  width: 350px;
+  color: black;
+  border-radius: 20px;
+  margin-left: 40px;
+}
+.rajesh i{
+  font-size: 35px;
+  margin-left: 95px;
+  height: 45px;
+  width: 45px;
+  color: white;
+  color: black;
+  margin-bottom: 20px;
+
+}
+.rajesh h4{
+  margin-left: 30px;
+  /* padding-top: 15px; */
+}
+.we h3
+{
+  margin-top: 30px;
+}
+.we h4
+{
+  margin-top: 30px;
+}
+.rajesh h6
+{
+  margin-right: 10px;
+}
